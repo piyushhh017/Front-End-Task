@@ -1,0 +1,30 @@
+.header {
+    height: 70px;
+    background: rgb(163,54,96);
+    background: linear-gradient(90deg, rgba(163,54,96,1) 28%, rgba(115,138,212,1) 100%);
+    box-shadow: 2px 3px 3px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.header h1 .h1 {
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+/* Media query for small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .header h1 .h1{
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+}

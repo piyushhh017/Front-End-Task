@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 47%, rgba(0,212,255,1) 100%);
+}
+
+.cardSec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+.employCard {
+    position: relative;
+    width: 50px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.employCard:hover {
+    transform: scale(1.05);
+}
+
+.employCard img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: black;
+    object-fit: cover;
+    border: 2px solid purple;
+}
+
+.employCard h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.employCard p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.viewBtn{
+    position: absolute;
+    bottom: 5%;
+    width: 60%;
+    height: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: rgb(163,54,96);
+    background: linear-gradient(90deg, rgba(163,54,96,1) 36%, rgba(115,138,212,1) 100%);
+    border: 0;
+    box-shadow: 1px 2px 2px black;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.viewBtn:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(253,249,249,1) 0%);
+    background-color: white;
+}
+.viewBtn:hover .link{
+    color: rebeccapurple;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+.link:hover , .link:active{
+    color: rebeccapurple;
+}
+.form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.input{
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background: rgb(86,16,97);
+    background: linear-gradient(90deg, rgba(86,16,97,1) 28%, rgba(29,47,106,1) 100%);
+}
+/* Media query for small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cardSec {
+        gap: 20px;
+    }
+
+    .employCard {
+        width: 45%;
+        height: 250px;
+    }
+}
+
+/* Media query for medium devices (tablets, 600px to 768px) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .employCard {
+        width: 25%;
+        height: 250px;
+    }
+}
+
+/* Media query for large devices (desktops, 768px and up) */
+@media only screen and (min-width: 769px) and (max-width:1024px){
+    .employCard {
+        width: 16%;
+        height: 250px;
+    }
+}
+@media only screen and (min-width:1025px){
+    .employCard {
+        width: 15%;
+        height: 250px;
+    }
+}
