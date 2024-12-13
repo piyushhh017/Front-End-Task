@@ -17,7 +17,7 @@ const EmployerList = () => {
   return (
     <>
     <form className='form'>
-        <input type="text" placeholder='Search here' value={search} onChange={(e)=>setSearch(e.target.value)} className='input'/>
+        <input type="text" placeholder='Search here' value={search} onChange={(e)=>setSearch(e.target.value)} className='input' data-aos='fade-right'/>
     </form>
     <div className='cardSec'>
         {Employees.filter((data)=>{
